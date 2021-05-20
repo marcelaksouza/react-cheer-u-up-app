@@ -37,11 +37,12 @@ function App() {
   return (
     <div className='bg-gray-100'>
       <div className='flex items-center p-6 bg-red-300'>
-      <img className='h-10' src={LogoCat} alt='logo'></img>
-      <p className='pl-6'>Cheer U Up App</p>
+      <img className='h-12' src={LogoCat} alt='logo'></img>
+      <p className='pl-6 text-white text-2xl'>Cheer U Up App</p>
       </div>
 
-      <div classname='grid grid-cols-3 gap-4 justify-items-center h-48'>
+      <div classname='grid grid-cols-3 gap-4 justify-items-center h-48 flex justify-center items-center'>
+        
         <CardWrap
         
         title={cats[0].title}
