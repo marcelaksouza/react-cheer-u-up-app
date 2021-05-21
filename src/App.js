@@ -1,9 +1,10 @@
 import React from "react";
-// import CardWrap from "./components/UI/CardWrap";
 import Navbar from "./components/NavBar";
-import  SearchCatsForm from './components/SearchCatsForm'
+import SearchCatsForm from "./components/SearchCatsForm";
+import CatsList from "./components/CatsList";
 
 function App() {
+
   const catsData = [
     {
       id: "0XYvRd7oD",
@@ -27,39 +28,9 @@ function App() {
     <div className="">
       <Navbar />
       <SearchCatsForm />
+      <CatsList items={catsData}/>
     </div>
   );
 }
 
 export default App;
-
-//build cards from a array
-// const buildCardDiv = (cats) => {
-//     let catDisplay = "";
-//     catDisplay += `<div class="card-columns">`;
-
-//     cats.forEach(cat => {
-//         catDisplay += `<div class="card">`;
-//         catDisplay += `<img src=" ${cat.url}" class="img-fluid" alt="kitty pic" onclick="openModalfunction('${cat.id}')">`;
-//         catDisplay += `<div id="heartDivId-${cat.id}" class="heart">`;
-//         catDisplay += `<img id="catImgId-${cat.id}" src="frontend/img/heart1.png" onclick="favoriteFunc('${cat.id}')" width="30" height="30" class="d-inline-block align-top" alt="blankHeart">`
-//         catDisplay += `</div>`;
-//         catDisplay += `</div>`;
-//     });
-//     catDisplay += `</div>`;
-
-//     displayDiv.innerHTML = catDisplay;
-// }
-// {/* <CardWrap
-
-//         title={catsData[0].title}
-//         url={catsData[0].url}
-//         description={catsData[0].description}
-//         favorite={catsData[0].favorite}
-//       />
-//       <CardWrap
-//         title={catsData[1].title}
-//         url={catsData[1].url}
-//         description={catsData[1].description}
-//         favorite={catsData[1].favorite}
-//       /> */}
