@@ -1,62 +1,32 @@
-import CardWrap from './components/CardWrap'
-import LogoCat from './img/logoCat.png'
-
+import React from "react";
+// import CardWrap from "./components/UI/CardWrap";
+import Navbar from "./components/NavBar";
+import  SearchCatsForm from './components/SearchCatsForm'
 
 function App() {
-
-  const cats = [
+  const catsData = [
     {
-      id: '0XYvRd7oD',
-      title: 'abys',
-      url: 'https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg',
-      description: "The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.",
-      favorite: false
+      id: "0XYvRd7oD",
+      title: "abys",
+      url: "https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg",
+      description:
+        "The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.",
+      favorite: false,
     },
-    { 
-      id: 'JFPROfGtQ', 
-      title: 'asho', 
-      url: 'https://cdn2.thecatapi.com/images/JFPROfGtQ.jpg',
-      description: "The American Shorthair is known for its longevity, robust health, good looks, sweet personality, and amiability with children, dogs, and other pets.",
-      favorite: true  
-    }
+    {
+      id: "JFPROfGtQ",
+      title: "asho",
+      url: "https://cdn2.thecatapi.com/images/JFPROfGtQ.jpg",
+      description:
+        "The American Shorthair is known for its longevity, robust health, good looks, sweet personality, and amiability with children, dogs, and other pets.",
+      favorite: true,
+    },
   ];
 
-  //did not test this function yet
-  // const buildCards = (cats) => {
-  //   cats.map(cat => {
-  //     return (<CardWrap 
-  //     id = {cat.id}
-  //     url = {cat.url}
-  //     title = {cat.title}
-  //     description = {cat.description}
-  //     />)
-  //   })
-  // }
-
-
   return (
-    <div className='bg-gray-100'>
-      <div className='flex items-center p-6 bg-red-300'>
-      <img className='h-12' src={LogoCat} alt='logo'></img>
-      <p className='pl-6 text-white text-2xl'>Cheer U Up App</p>
-      </div>
-
-      <div classname='grid grid-cols-3 gap-4 justify-items-center h-48 flex justify-center items-center'>
-        
-        <CardWrap
-        
-        title={cats[0].title}
-        url={cats[0].url}
-        description={cats[0].description}
-        favorite={cats[0].favorite}
-      />
-      <CardWrap
-        title={cats[1].title}
-        url={cats[1].url}
-        description={cats[1].description}
-        favorite={cats[1].favorite}
-      />
-      </div>
+    <div className="">
+      <Navbar />
+      <SearchCatsForm />
     </div>
   );
 }
@@ -77,6 +47,19 @@ export default App;
 //         catDisplay += `</div>`;
 //     });
 //     catDisplay += `</div>`;
-    
+
 //     displayDiv.innerHTML = catDisplay;
 // }
+// {/* <CardWrap
+
+//         title={catsData[0].title}
+//         url={catsData[0].url}
+//         description={catsData[0].description}
+//         favorite={catsData[0].favorite}
+//       />
+//       <CardWrap
+//         title={catsData[1].title}
+//         url={catsData[1].url}
+//         description={catsData[1].description}
+//         favorite={catsData[1].favorite}
+//       /> */}
