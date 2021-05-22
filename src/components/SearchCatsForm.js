@@ -3,9 +3,9 @@ import React from "react";
 const SearchCatsForm = () => {
   return (
     <div>
-      <div className="shadow flex flex-wrap justify-center p-2 py-4 px-4 max-w-sm">
-        <form className="bg-white rounded-sm px-8 pt-6 pb-8 mb-4">
-          <div className="relative">
+      <div className="justify-center w-sm max-w-sm">
+        <form className="bg-white rounded-sm px-8 pt-6 mb-4">
+          <div className="">
             <label className="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2">
               Quantity
             </label>
@@ -16,7 +16,7 @@ const SearchCatsForm = () => {
             />
           </div>
 
-          <div className="relative">
+          <div className="">
             <label className="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2">
               Cats Categories
             </label>
