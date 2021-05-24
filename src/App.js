@@ -42,16 +42,15 @@ function App() {
   return (
     <div className="">
       <Navbar />
-      <div className="grid grid-cols-4">
-        
-        <div className="grid col-span-1">
+
+      <div className="">
+        <div className="bg-blue-300 w-full ">
           <SearchCatsForm />
         </div>
         
-        <div className="col-span-3">
+        <div className="bg-yellow-300 w-full overflow-hidden ">
           <CatsList items={catsData} />
         </div>
-
       </div>
     </div>
   );
