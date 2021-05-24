@@ -3,7 +3,7 @@ import React from "react";
 const SearchCatsForm = () => {
   return (
     <div>
-      <div className="justify-center sm:w-full md:max-w-xs">
+      <div className="justify-center sm:w-full">
         <form className="bg-white rounded-sm px-8 pt-6 mb-4">
           <div className="">
             <label className="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2">
