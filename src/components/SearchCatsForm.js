@@ -1,40 +1,24 @@
 import React from "react";
+import Label from "./Form/Label";
+import Input from "./Form/Input";
+import DropDownOptions from "./Form/DropDownOptions";
+
+let catsCategories = ["Box", "Hats"];
+let catsBreeds = ["Chartreus", "Birman"];
 
 const SearchCatsForm = () => {
   return (
     <div>
       <div className="justify-center sm:w-full">
         <form className="bg-white rounded-sm px-8 pt-6 mb-4">
-          <div className="">
-            <label className="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2">
-              Quantity
-            </label>
-            <input
-              className="appearance-none block w-full text-gray-700 border border-red-300 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-              type="text"
-              value="1 to 100"
-            />
-          </div>
+          <Label>Quantity</Label>
+          <Input />
 
-          <div className="">
-            <label className="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2">
-              Cats Categories
-            </label>
-            <select className=" drop-shadow-sm block appearance-none w-full border border-red-300 text-gray-700 py-3 px-4 mb-3 rounded leading-tight focus:outline-none">
-              <option>Boxes</option>
-              <option>Hats</option>
-            </select>
-          </div>
+          <Label>Cats Categories</Label>
+          <DropDownOptions list={catsCategories} />
 
-          <div>
-            <label className="block uppercase tracking-wide text-gray-700 text-xl font-bold mb-2">
-              Cats Breeds
-            </label>
-            <select className="block appearance-none w-full border border-red-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none">
-              <option value="chartreus">Chartreus</option>
-              <option value="birman">Birman</option>
-            </select>
-          </div>
+          <Label>Cats Breeds</Label>
+          <DropDownOptions list={catsBreeds} />
 
           <div className="py-4">
             <button
