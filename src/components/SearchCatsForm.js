@@ -3,9 +3,6 @@ import Label from "./Form/Label";
 import Input from "./Form/Input";
 import DropDownOptions from "./Form/DropDownOptions";
 
-let catsCategories = ["Box", "Hats"];
-let catsBreeds = ["Chartreus", "Birman"];
-
 const SearchCatsForm = () => {
   return (
     <div>
@@ -15,10 +12,10 @@ const SearchCatsForm = () => {
           <Input />
 
           <Label>Cats Categories</Label>
-          <DropDownOptions list={catsCategories} />
+          <DropDownOptions type={"categories"}/>
 
           <Label>Cats Breeds</Label>
-          <DropDownOptions list={catsBreeds} />
+          <DropDownOptions type={"breeds"}/>
 
           <div className="py-4">
             <button
