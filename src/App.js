@@ -43,12 +43,12 @@ function App() {
     <div className="">
       <Navbar />
 
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-4 ">
         <div className=" w-full ">
           <SearchCatsForm />
         </div>
         
-        <div className=" w-full overflow-hidden col-span-2">
+        <div className=" w-full overflow-hidden md:col-span-3">
           <CatsList items={catsData} />
         </div>
       </div>
